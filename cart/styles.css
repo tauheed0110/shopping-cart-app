@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", serif;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+}
+nav>ul{
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+
+#menu-icon{
+    width: 2rem;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+.menu{
+    fill: white;
+}
+main{
+    padding: 1rem;
+}
+main>h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    gap: 1rem;
+}
+
+asside{
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    width: 20%;
+    max-height: 400px;
+}
+asside>h3{
+    text-align: center;
+}
+asside>section{
+    margin: 0.4rem;
+}
+
+#payTotal{
+    border: 1px solid #cccc;
+    padding: 0.7rem 0;
+    border-left: none;
+    border-right: none;
+}
+.flexdata{
+    display: flex;
+    justify-content: space-between;
+}
+
+asside>button{
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+main-content .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  
+  main-content .items .item {
+    border: 1px solid black;
+    flex: 20%;
+  }
+  
+  main-content .items .item img {
+    max-width: 100%;
+  }
+  
+  main-content .items .item .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  main-content .items .item .info {
+    padding: 1rem;
+  }
+  
+  main-content .items .item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  main-content .items .item .colors {
+    display: flex;
+    margin: 1rem 0;
+  }
+  
+  main-content .items .item .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 0 5px;
+  }
+
+@media screen and (max-width: 900px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-icon{
+        display: block;
+    }
+    nav{
+        display: none;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        padding: 4rem 5rem;
+        background: black;
+        border-left: 1px solid #ccc;
+    }
+}

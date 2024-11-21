@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", serif;
+}
+header{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+main{
+    padding: 1rem;
+}
+input{
+    width: 100%;
+    padding: 0.7rem 1rem;
+}
+.formItem{
+    margin-bottom: 0.5rem;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 0.8rem 3rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h1{
+    text-align: center;
+}

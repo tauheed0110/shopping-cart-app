@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+}
+nav>ul{
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+#main{
+    padding: 2rem 3rem;
+}
+.flexButton{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+button{
+    background-color: black;
+    padding: 0.8rem 3rem;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+button:hover{
+    cursor: pointer;
+}
+#signup{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#loadingImg{
+    display: flex;
+    justify-content: end;
+}
+#loadingImg>img{
+    width: 55%;
+    position: relative;
+    top: -4rem;
+}
+#menu-icon{
+    width: 2rem;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+.menu{
+    fill: white;
+}
+
+@media screen and (max-width: 900px) {
+    #loadingImg>img{
+        top: 0px;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-icon{
+        display: block;
+    }
+    nav{
+        display: none;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        padding: 4rem 5rem;
+        background: black;
+        border-left: 1px solid #ccc;
+    }
+}
