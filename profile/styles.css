@@ -31,6 +31,10 @@ button{
     font-size: 1rem;
     font-weight: 400;
 }
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
 
 h1{
     text-align: center;

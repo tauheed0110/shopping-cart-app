@@ -47,6 +47,7 @@ main{
 main>h1{
     text-align: center;
 }
+
 #container{
     display: flex;
     gap: 1rem;
@@ -56,8 +57,11 @@ asside{
     background-color: black;
     padding: 1rem;
     color: white;
-    width: 20%;
+    width: 30%;
     max-height: 400px;
+}
+main-content{
+    width: 100%;
 }
 asside>h3{
     text-align: center;
@@ -88,19 +92,23 @@ main-content .items {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow-y: scroll;
     padding: 1rem 0;
     gap: 1rem;
-  }
-  
-  main-content .items .item {
+}
+
+main-content .items .item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
-    flex: 20%;
+    width: 25%;
+    margin-bottom: 3rem;
   }
   
   main-content .items .item img {
     max-width: 100%;
+    height: 60%;
   }
   
   main-content .items .item .row {
@@ -121,6 +129,7 @@ main-content .items {
     color: white;
     background-color: black;
     cursor: pointer;
+    margin-top: auto;
   }
   
   main-content .items .item .colors {
@@ -135,6 +144,15 @@ main-content .items {
     margin: 0 5px;
   }
 
+  button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .productTitle{
+    font-size: 13px;
+    width: 80%;
+    margin: 0.4rem 0;
+  }
 @media screen and (max-width: 900px) {
     ul{
         display: flex;
@@ -153,5 +171,11 @@ main-content .items {
         padding: 4rem 5rem;
         background: black;
         border-left: 1px solid #ccc;
+    }
+    asside{
+        width: 60%;
+    }
+    main-content .items .item{
+        width: 100%;
     }
 }
